@@ -28,17 +28,22 @@
             text-transform: uppercase;
         }
 
-        &-item>a {
-            display: block;
-            margin: 0 0 11px 0;
-            color: #F16D7F;
-            text-transform: uppercase;
-            text-decoration: none;
+        &-item {
+            list-style: none;
+
+            &>a {
+                display: block;
+                margin: 0 0 11px 0;
+                color: #F16D7F;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
         }
     }
 
     &-sublist-item {
         padding-left: 22px;
+        list-style: none;
 
         &>a {
             display: block;

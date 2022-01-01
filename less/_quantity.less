@@ -1,0 +1,88 @@
+.quantity-list {
+    width: 71px;
+    border: none;
+
+    &-btn-title {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #6F6E6E;
+        background-color: transparent;
+        text-align: left;
+        text-transform: uppercase;
+        position: relative;
+
+        & svg {
+            fill: #6F6E6E;
+            position: absolute;
+            top: 40%;
+            left: 110%;
+        }
+
+        &:hover {
+            color: #F16D7F;
+
+            & svg {
+                fill: currentColor;
+            }
+        }
+
+        &:active {
+            color: black;
+
+            & svg {
+                fill: currentColor;
+            }
+        }
+
+        &-item {
+            display: none;
+
+            &:nth-child(1):checked~&-title:nth-child(2)::before,
+            &:nth-child(3):checked~&-title:nth-child(4)::before {
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-title {
+                display: block;
+                margin: 0 0 6px 0;
+                position: relative;
+                text-transform: uppercase;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16.41px;
+                color: #6F6E6E;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid #EBEBEB;
+                    position: absolute;
+                    top: 1px;
+                    left: -23.5px;
+                }
+            }
+        }
+    }
+
+    #quantity-switch {
+        display: none;
+
+        &:checked~.color-list-wrp {
+            display: flex;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+    }
+}

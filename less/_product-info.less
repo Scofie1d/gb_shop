@@ -1,0 +1,220 @@
+.product-info {
+    width: 1140px;
+    min-height: 600px;
+    border: 1px solid #eaeaea;
+    margin: -65px auto 129.41px;
+    background-color: #ffffff;
+    position: relative;
+
+    &-title {
+        max-width: 100%;
+        text-transform: uppercase;
+        margin-top: 64.54px;
+        margin-bottom: 12.1px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        text-align: center;
+    }
+
+    &-subtitle {
+        display: block;
+        width: 100%;
+        padding-top: 12.1px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 48.41px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 63px;
+            height: 3.03px;
+            background-color: #f16d7f;
+            position: absolute;
+            top: 15.48%;
+            left: 47.5%;
+        }
+
+    }
+
+    &-txt {
+        display: block;
+        width: 554px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin: 0 auto 32.27px;
+    }
+
+    &-price {
+        display: block;
+        margin: 0 auto 65.04px;
+        color: #EF5B70;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    & hr {
+        margin: 0 auto 65.05px;
+        width: 641px;
+        color: #eaeaea;
+    }
+
+    &-btn {
+        display: block;
+        max-width: 211px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 14.62px;
+        color: #F26376;
+        box-sizing: border-box;
+        border: 1px solid #ff6a6a;
+        background-color: #fff;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        & svg {
+            fill: #EF5B70;
+            margin: 0 22.99px 0 0;
+        }
+
+        &:hover {
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: #F26376;
+
+            & svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.product-features {
+    margin: 0 auto 48.91px;
+    min-width: 373px;
+    display: flex;
+    justify-content: center;
+
+    &-size {
+        min-width: 90px;
+        border: none;
+        background-color: transparent;
+        margin: 0 22.98px 0 32.98px;
+
+        &-btn-title {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16.8px;
+            color: #6F6E6E;
+            background-color: transparent;
+            text-align: left;
+            text-transform: uppercase;
+            position: relative;
+
+            & svg {
+                fill: #6F6E6E;
+                position: absolute;
+                top: 40%;
+                left: 100%;
+            }
+
+            &:hover {
+                color: #F16D7F;
+
+                & svg {
+                    fill: currentColor;
+                }
+            }
+
+            &:active {
+                color: black;
+
+                & svg {
+                    fill: currentColor;
+                }
+            }
+        }
+
+        &-wrp {
+            width: 90px;
+            display: none;
+            flex-direction: column;
+            margin: 5px 0 0 0;
+            padding: 9.5px 9.5px 9.5px 31px;
+            box-sizing: border-box;
+            background-color: #fff;
+            position: absolute;
+            z-index: 2;
+        }
+
+        &-item {
+            display: none;
+
+            &:nth-child(1):checked~&-title:nth-child(2)::before,
+            &:nth-child(3):checked~&-title:nth-child(4)::before,
+            &:nth-child(5):checked~&-title:nth-child(6)::before,
+            &:nth-child(7):checked~&-title:nth-child(8)::before {
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Green_tick.svg/600px-Green_tick.svg.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-title {
+                display: block;
+                margin: 0 0 6px 0;
+                position: relative;
+                text-transform: uppercase;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16.41px;
+                color: #6F6E6E;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid #EBEBEB;
+                    position: absolute;
+                    top: 1px;
+                    left: -23.5px;
+                }
+            }
+        }
+
+    }
+
+    #product-switch-size {
+        display: none;
+
+        &:checked~.product-features-size-wrp {
+            display: flex;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+    }
+}

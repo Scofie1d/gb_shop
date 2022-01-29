@@ -1,13 +1,12 @@
-.subscribe {
+.subscribe-box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    max-width: 1600px;
+    // max-width: 1600px;
     min-height: 448px;
-    padding: 20px;
     margin: 0 auto;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/subscribe_bkg.png);
@@ -15,10 +14,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: #f3eeef;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    min-height: 448px;
+    margin: 0 auto;
+    padding-right: 97px;
+    box-sizing: border-box;
 
     &-info {
         display: flex;
-        margin: 0 340px 0 0;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;

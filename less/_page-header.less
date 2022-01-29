@@ -1,9 +1,12 @@
 .page-header {
+    width: 100%;
     min-height: 75px;
     background-color: #222;
 
     &-btns {
+        max-width: 1140px;
         width: 100%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         padding: 18px 0;
@@ -28,6 +31,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+
         }
     }
 
@@ -73,6 +78,8 @@
             display: block;
             width: 32px;
             height: 32px;
+
+
         }
     }
 
@@ -84,5 +91,15 @@
         color: inherit;
         background-color: transparent;
         cursor: pointer;
+
+        & svg {
+            fill: #E8E8E8
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .page-header-btns {
+        padding: 18px 32px;
     }
 }

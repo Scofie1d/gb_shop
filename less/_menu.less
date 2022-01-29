@@ -1,6 +1,10 @@
 #menu-btn {
     display: none;
 
+    & svg {
+        fill: #E8E8E8
+    }
+
     &:checked~.menu-list {
         display: block;
     }
@@ -39,6 +43,7 @@
 
     &-sublist-item {
         padding-left: 22px;
+        list-style: none;
 
         &>a {
             display: block;

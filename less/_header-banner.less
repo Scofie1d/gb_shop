@@ -7,23 +7,24 @@
 
     &-item {
         min-height: 764px;
-        width: 1140px;
+        max-width: 1140px;
+        width: 100%;
         background-image: url(../img/banner-background.png);
         background-repeat: no-repeat;
-        background-position: -66% bottom;
+        background-position: left bottom;
+        background-size: contain;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
     }
 
     &-txt {
-        max-width: 377px;
-        margin: 0 100px 90px 0;
+        max-width: 48%;
+        // margin: 0 100px 90px 0;
         position: relative;
         text-transform: uppercase;
-        left: 63%;
+        left: 54%;
 
         &::before {
             content: "";

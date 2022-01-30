@@ -8,6 +8,7 @@
 
     &-wrp {
         max-width: 652px;
+        width: 100%;
         min-height: 306px;
         display: flex;
         justify-content: start;
@@ -83,12 +84,14 @@
 
     &-txt {
         position: relative;
-        width: 390px;
+        max-width: 390px;
+        width: 100%;
         padding: 22px 0 0 32px;
 
         &-title {
             margin-bottom: 42px;
-            width: 210px;
+            max-width: 210px;
+            width: 100%;
             text-transform: uppercase;
             font-weight: normal;
             font-size: 24px;
@@ -149,12 +152,13 @@
             color: #222;
             padding: 0 16px;
 
-            &:nth-child(1)::placeholder {
+            &:nth-child(2)::placeholder {
                 color: #B1B1B1;
 
             }
 
-            &:nth-child(3) {
+
+            &:nth-child(4) {
                 margin-bottom: 24px;
             }
         }

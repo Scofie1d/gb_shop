@@ -107,6 +107,43 @@
         }
     }
 
+    .cart {
+        flex-direction: column;
+
+        &-wrp {
+            margin: 0 16px 64.5px;
+            max-width: 734px;
+            width: 100%;
+
+            &-btns {
+                justify-content: center;
+            }
+
+            &-btn {
+                margin-right: 48.5px;
+            }
+        }
+
+        &-form {
+            margin: 0 auto;
+            max-width: 735px;
+            width: 100%;
+            flex-direction: row;
+        }
+
+        &-checkout {
+            margin-top: 38.5px;
+
+            &-subtotal {
+                width: 326px;
+            }
+        }
+
+        &-del-btn {
+            right: -68px;
+        }
+    }
+
     .services {
         flex-direction: column;
         justify-content: center;
@@ -285,7 +322,7 @@
         }
 
         &-txt {
-            margin: 24px 0 32px;
+            margin: 50px 0 32px;
 
         }
 
@@ -400,6 +437,83 @@
         }
     }
 
+    .cart {
+        margin-top: 39px;
+
+        &-item {
+            min-height: 188px;
+
+            &:nth-child(1) {
+                margin-bottom: 32px;
+            }
+        }
+
+        &-photo {
+            max-width: 143px;
+            width: 100%;
+        }
+
+        &-txt {
+            padding: 13.52px 0 0 17px;
+
+            &-title {
+                width: 140px;
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 25.85px;
+            }
+
+            &-info {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 4px;
+
+                &:nth-child(6) span {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+
+        &-wrp {
+            max-width: 358px;
+            width: 100%;
+            margin: 0 8px 48.33px;
+
+            &-btns {
+                margin: 39.33px auto 0 0;
+
+            }
+
+            &-btn {
+                white-space: nowrap;
+                width: 174px;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                padding: 9px 17px;
+
+                &:nth-child(1) {
+                    margin-right: 9px;
+                }
+            }
+        }
+
+        &-form {
+            flex-direction: column;
+            margin: 0 8px;
+        }
+
+        &-checkout {
+            margin-top: 48px;
+            max-width: 360px;
+        }
+
+        &-del-btn {
+            top: 18px;
+            right: 8px;
+        }
+    }
 
 
 
